@@ -1,0 +1,9 @@
+After Installing WireGuard/OpenVPN Server. Change the server time accordingly to geographical location of where it is hosted to avoid packet losses.
+
+
+Ex:
+Debian 12 VPS hosted on Singapore. Change time via
+timedatectl set-timezone Asia/Singapore
+timedatectl set-ntp on
+
+After doing this, time should be synced automatically. Reboot the machine.
