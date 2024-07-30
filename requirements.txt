@@ -7,3 +7,16 @@ timedatectl set-timezone Asia/Singapore
 timedatectl set-ntp on
 
 After doing this, time should be synced automatically. Reboot the machine.
+
+Also put this in client config when you change server MTU to work as expected.
+
+Common Best MTUs ($mtu)
+1412
+1360
+
+clientconfig.conf
+[Interface]
+Address =
+DNS = 
+PrivateKey = 
+MTU = $mtu
